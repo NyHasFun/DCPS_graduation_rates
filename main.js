@@ -46,13 +46,9 @@ d3.csv("Schools.csv")
 				.domain(wards.map(function(c) { return c.id; }));
 
 	    var line = d3.line()
-	    	.defined(function(d) { return d.rate != null; })
+	    .defined(function(d) { return d.rate != null; })
 			.x(function(d) { return xScale(d.date); })
 			.y(function(d) { return yScale(d.rate); });
-
-		label
-        	.attr("x", function(d) { return d.x + 8; })
-        	.attr("y", function(d) { return d.y; });
 
 	    var ward = chartGroup.selectAll(".ward")
 	    	.data(wards)
