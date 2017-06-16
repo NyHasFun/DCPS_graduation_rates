@@ -1,0 +1,19 @@
+body{
+	font-family: Helvetica, Arial;
+}
+
+h2{
+	text-align: center;
+}
+
+path{
+	stroke: black;
+    fill: none;
+    stroke-width: 2px;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 1.5px;
+}
